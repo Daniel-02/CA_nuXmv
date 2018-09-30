@@ -176,7 +176,7 @@ char* getsDataConstraint(Node *t, char buffer[]){
 */
 
 int main(){
-    generateSyntaxTree("rules.txt","fifo_resultado.txt");
+    generateSyntaxTree("rules.txt","fifo1Tree.txt");
 
     FILE *dest;
     N_LIST *states, *istates, *names, *temp;

@@ -4,3 +4,5 @@ all:
 clean:
 	rm bin/lex
 	rmdir bin
+compiler:
+	gcc src/compiler.c -o src/compiler

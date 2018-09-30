@@ -1,14 +1,14 @@
 MODULE main
 VAR
     cs : {q0,p0,p1};
-    a : {NULL,0,1};
-    b : {NULL,0,1};
+    portA : {NULL,0,1};
+    portB : {NULL,0,1};
 ASSIGN
     init(cs) := {q0};
-    init(a) := {NULL,0,1};
-    init(b) := {NULL,0,1};
+    init(portA) := {NULL,0,1};
+    init(portB) := {NULL,0,1};
 	next(cs) := case
-		(cs = q0) & (b = NULL) & ( a = 0 ) : p0;
-		(cs = q0) & (b = NULL) & ( a = 1 ) : p1;
-		(cs = p0) & (a = NULL) & ( b = 0 ) : q0;
-		(cs = p1) & (a = NULL) & ( b = 1 ) : q0;
+		(cs = q0) & (portB = NULL) & ( portA = 0 ) : p0;
+		(cs = q0) & (portB = NULL) & ( portA = 1 ) : p1;
+		(cs = p0) & (portA = NULL) & ( portB = 0 ) : q0;
+		(cs = p1) & (portA = NULL) & ( portB = 1 ) : q0;

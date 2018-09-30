@@ -1,0 +1,5 @@
+CA fifo1
+STATES q0,p0,p1
+INITIAL STATES q0
+NAMES portA,portB
+TRANSITIONS q0 : p0 (portA) [portA = 0],q0 : p1 (portA) [portA = 1],p0 : q0 (portB) [portB = 0],p1 : q0 (portB) [portB = 1]
