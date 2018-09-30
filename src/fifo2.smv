@@ -1,0 +1,12 @@
+MODULE main
+VAR
+    cs : {q2,p2};
+    B : {NULL,0,1};
+    C : {NULL,0,1};
+ASSIGN
+    init(cs) := {q2};
+    init(B) := {NULL,0,1};
+    init(C) := {NULL,0,1};
+	next(cs) := case
+		(cs = q1) & (C = NULL) & ( B = 0 ) : p1;
+		(cs = p1) & (B = NULL) & ( C = 0 ) : q1;

@@ -1,0 +1,6 @@
+CA fifo1
+STATES q2, p2
+INITIAL STATES q2
+NAMES B, C
+TRANSITIONS q1 : p1 (B) [B = 0],
+            p1 : q1 (C) [C = 0]

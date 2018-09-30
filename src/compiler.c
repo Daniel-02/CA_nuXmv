@@ -176,7 +176,7 @@ char* getsDataConstraint(Node *t, char buffer[]){
 */
 
 int main(){
-    generateSyntaxTree("rules.txt","fifo1Tree.txt");
+    generateSyntaxTree("rules.txt","fifo2Tree.txt");
 
     FILE *dest;
     N_LIST *states, *istates, *names, *temp;
@@ -186,7 +186,7 @@ int main(){
     names = find("names");
 
     //VAR
-    dest = fopen("fifo.smv","w");
+    dest = fopen("fifo2.smv","w");
     char *line = "MODULE main\nVAR\n";
     fprintf(dest,"%s",line);
 
